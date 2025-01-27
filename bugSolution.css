@@ -1,0 +1,9 @@
+To avoid this issue, it is generally recommended to avoid mixing percentages and lengths within the same `calc()` expression.  Instead, use alternative approaches such as:
+
+1. **Using only percentages or lengths:** If possible, adjust your layout to use either percentages or fixed lengths consistently.
+
+2. **Using JavaScript:** For more complex scenarios requiring dynamic calculations, JavaScript can provide a more consistent and predictable approach.  This gives you fine-grained control over the layout based on precise measurements.
+
+3. **Using `em` or `rem` units:**  These units can provide a more scalable and consistent approach for calculating width and other properties in relation to the parent element or the root element, respectively.   They can often replace the need to mix percentage and pixel-based values.
+
+The `bugSolution.css` file provides an example of using `em` units to achieve a similar outcome to the original `calc()` expression.
