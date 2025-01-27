@@ -1,0 +1,9 @@
+The CSS `calc()` function can produce unexpected results if you use it with percentages and lengths in a way that isn't fully supported by all browsers.  For example, the following code might not work as expected in all browsers:
+
+```css
+.element {
+  width: calc(50% - 10px);
+}
+```
+
+This is because the subtraction of pixels from a percentage is not consistently interpreted.  Some browsers might calculate 50% of the container's width first, then subtract 10px, while others might attempt a different calculation order, potentially leading to layout issues.
